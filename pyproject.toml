@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wina-pkg"
+version = "0.1.0"
+description = "WINA static library packager"
+dependencies = ["rich-click"]
+
+[project.scripts]
+wina-pkg = "wina_pkg.cli:cli"
